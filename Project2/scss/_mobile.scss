@@ -1,0 +1,101 @@
+@media screen and (max-width: 540.98px){
+	.container{
+		max-width: calc(100% - 10px);
+	}
+	.head{
+		height: 40px;
+	}
+	.burg__wrapp{
+		height: 40px;
+	}
+	.nav__list{
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+	}
+	.nav__menu{
+		top: 40px;
+	}
+	.header__title{
+		margin: 50px 0 0 0;
+	}
+	.header__title.active{
+		margin: 250px 0 0 0;
+	}
+	.title__title h1{
+		font-size: 24px;
+		line-height: 1.5;
+	}
+	.header__btn{
+		margin-left: 0;
+	}
+	.gallery__item{
+		flex: 1 1 200px;
+	}
+	.gallery{
+		margin: 180px 0 0 0;
+		padding: 0 0 5px 0;
+	}
+	.serv{
+		padding: 50px 0;
+	}
+	.subtitle{
+		font-size: 28px;
+	}
+	.serv__item{
+		flex: 0 0 100%;
+		margin: 0 5px 10px;
+	}
+	.port {
+		padding: 50px 0;
+	}
+	.port__item{
+		flex: 0 0 100%;
+		height: 450px;
+	}
+	.portfolio__img--1 {
+		height: 350px;
+	}
+	.portfolio__img--2 {
+		height: 350px;
+	}
+	.portfolio__img--3 {
+		height: 350px;
+	}
+	.portfolio__img--4 {
+		height: 350px;
+	}
+	.portfolio__img--5 {
+		height: 350px;
+	}
+	.portfolio__img--6 {
+		height: 350px;
+	}
+	.portfolio__img--7 {
+		height: 350px;
+	}
+	.portfolio__img--8 {
+		height: 350px;
+	}
+	.portfolio__text {
+		padding: 10px;
+	}
+	.portfolio__link{
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	.team{
+		padding: 50px 0;
+	}
+	.title__row{
+		margin: 0;
+	}
+	.team__item{
+		flex: 0 0 100%;
+		padding: 0 6px;
+	}
+	.team__photo{
+		width: 80px;
+		height: 80px;
+	}
+}
