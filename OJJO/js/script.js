@@ -67,19 +67,6 @@ $(".dropdown__btn").click(function (event) {
 	$(this).parent().toggleClass("active");
 	return false;
 });
-const dropDownBtns = document.querySelectorAll('.dropdown__btn');
-const dropDowns = document.querySelectorAll('.filter__dropdown');
-
-const removeAllActive = () => {
-	return dropDowns.forEach(item => item.classList.remove('active'));
-};
-
-dropDownBtns.forEach(btn => {
-	btn.addEventListener('click', async (e) => {
-		await removeAllActive();
-		e.target.parentNode.classList.add('active')
-	});
-});
 // -------------ReadFull----------------
 document.getElementById('more').onclick = function () {
 	document.getElementById('full-text').classList.toggle('fulltext');
