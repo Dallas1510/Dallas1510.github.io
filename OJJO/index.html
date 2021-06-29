@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<title>OJJO</title>
+</head>
+
+<body id="lock">
+	<header class="header --main">
+		<div class="header__logo">
+			<a href="index.html" class="header__logo-link">
+				<img src="img/logo.svg" alt="OJJO">
+			</a>
+		</div>
+		<div class="container">
+			<div class="burger__btn" id="burger__btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="header__content" id="burger">
+				<div class="header__wrapper">
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#">Контрагентам</a>
+							</li>
+							<li class="nav__item">
+								<a href="#">Дизайнерам</a>
+							</li>
+							<li class="nav__item">
+								<a href="#">Вакансии</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<button class="nav__search search" id="nav__search">
+									<span class="icon-search"></span> Поиск
+								</button>
+								<form class="nav__form" id="nav__form" action="#">
+									<input class="nav__search-field" type="text" placeholder="Search">
+									<button class="search__reset-btn" type="reset"><span
+											class="icon-close"></span></button>
+								</form>
+							</li>
+							<li class="nav__item">
+								<a href="#">Вход/Регистрация</a>
+							</li>
+							<li class="nav__item">
+								<div class="nav__user">
+									<a href="" class="nav__user-item nav-user__profile icon-profile"></a>
+									<a href="" class="nav__user-item nav-user__like icon-like"></a>
+								</div>
+							</li>
+							<li class="nav__item nav__socials">
+								<a href="#" class="nav__socials icon-yt"></a>
+								<a href="#" class="nav__socials icon-vk"></a>
+								<a href="#" class="nav__socials icon-fb"></a>
+								<a href="#" class="nav__socials icon-tg"></a>
+								<a href="#" class="nav__socials icon-e"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="banner-top">
+		<div class="container">
+			<div class="banner-top__wrapper">
+				<h2 class="banner-top__title title">Долго, дорого, богато!</h2>
+				<a href="catalog.html" class="banner-top__btn">каталог изделий</a>
+				<hr>
+				<div class="banner-top__brands brand">
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+					<a href="#" class="brand__item">
+						<img src="img/brands/coco.png " alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main>
+		<section class="categories">
+			<div class="container">
+				<div class="categories__content">
+					<div class="categories__head">
+						<p class="categories__small-title small-title">К мероприятиям</p>
+						<h2 class="categories__title title">Настоящая красота здесь!</h2>
+					</div>
+					<div class="categories__tabs tabs">
+						<div class="tabs__wrapper">
+							<button class="tabs__btn" onclick="openCategory(event, 'wedding')">Свадьба</button>
+							<button class="tabs__btn" onclick="openCategory(event, 'husband')">МУЖУ</button>
+							<button class="tabs__btn" onclick="openCategory(event, 'wife')">жене</button>
+							<button class="tabs__btn" onclick="openCategory(event, 'partner')">партнеру</button>
+							<button class="tabs__btn" onclick="openCategory(event, 'collection')">коллекции</button>
+							<button class="tabs__btn" onclick="openCategory(event, 'rare')">редкость</button>
+						</div>
+						<div class="tabs__content active" id="wedding">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца1</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги1</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески1</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки1</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты1</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы1</h3>
+							</a>
+						</div>
+						<div class="tabs__content" id="husband">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца2</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги2</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески2</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки2</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты2</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы2</h3>
+							</a>
+						</div>
+						<div class="tabs__content" id="wife">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца3</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги3</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески3</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки3</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты3</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы3</h3>
+							</a>
+						</div>
+						<div class="tabs__content" id="partner">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца4</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги4</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески4</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки4</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты4</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы4</h3>
+							</a>
+						</div>
+						<div class="tabs__content" id="collection">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца5</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги5</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески5</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки5</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты5</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы5</h3>
+							</a>
+						</div>
+						<div class="tabs__content" id="rare">
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 1.jpg" alt="Кольца">
+								<h3 class="tabs__title">Кольца6</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 2.jpg" alt="серьги">
+								<h3 class="tabs__title">серьги6</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 3.jpg" alt="подвески">
+								<h3 class="tabs__title">подвески6</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 4.jpg" alt="запонки">
+								<h3 class="tabs__title">запонки6</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 5.jpg" alt="браслеты">
+								<h3 class="tabs__title">браслеты6</h3>
+							</a>
+							<a class="tabs__link" href="#">
+								<img src="img/category/Rectangle 6.jpg" alt="часы">
+								<h3 class="tabs__title">часы6</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="salon">
+			<div class="container">
+				<div class="salon__text-box">
+					<p class="salon__small-title small-title">Не знаете, что выбрать?</p>
+					<h2 class="salon__title title">Посетите наши салоны в Москве</h2>
+					<p class="salon__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel
+						explicabo
+						necessitatibus voluptatum consequatur? Consequuntur cumque soluta distinctio excepturi quis est
+						nesciunt, sunt fugiat laborum necessitatibus esse ipsa sit pariatur.
+					</p>
+				</div>
+				<a href="#" class="salon__our-salons">наши салоны</a>
+			</div>
+		</section>
+		<section class="blog">
+			<div class="container">
+				<div class="blog__title-box">
+					<p class="blog__small-title small-title">Полезные статьи</p>
+					<h2 class="blog__title title">Лучшие советы по подбору дорогих подарков</h2>
+				</div>
+				<article class="blog__article article article__wrapper">
+					<a href="#" class="article__item">
+						<img src="img/blog/Rectangle 1.jpg" alt="">
+						<h3 class="article__title">Как выбрать
+							часы для своей
+							будущей жены</h3>
+					</a>
+					<a href="#" class="article__item">
+						<img src="img/blog/Rectangle 2.jpg" alt="">
+						<h3 class="article__title">Запонки для мужа:
+							7 ключевых правил
+							покупки аксессуара</h3>
+					</a>
+					<a href="#" class="article__item">
+						<img src="img/blog/Rectangle 3.jpg" alt="">
+						<h3 class="article__title">Как выбрать
+							обручальные кольца
+							молодоженам</h3>
+					</a>
+				</article>
+				<a href="#" class="blog__link">читать наш блог</a>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container">
+				<p class="gallery__small-title small-title">#ojjo_jewerly</p>
+				<h2 class="gallery__title title">Мы в социальных сетях</h2>
+				<div class="gallery__wrapper">
+					<div class="gallery__row">
+						<iframe class="gallery__video" src="https://www.youtube.com/embed/ULAccn3GpMM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+						<div class="gallery__img">
+							<img src="img/gallery/gallery__image4.jpg" alt="Watch">
+						</div>
+						<div class="gallery__img">
+							<img src="img/gallery/gallery__image3.jpg" alt="Ring">
+						</div>
+					</div>
+					<div class="gallery__row">
+						<div class="gallery__img">
+							<img src="img/gallery/gallery__image1.jpg" alt="Ring">
+						</div>
+						<div class="gallery__img">
+							<img src="img/gallery/gallery__image2.jpg" alt="Ring">
+						</div>
+						<iframe class="gallery__video" src="https://www.youtube.com/embed/ULAccn3GpMM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mail">
+			<div class="container">
+				<div class="mail__title-box">
+					<p class="mail__small-title small-title">Полезные советы и персональный предложения</p>
+					<h2 class="mail__title title">Эксклюзивная рассылка</h2>
+				</div>
+				<div class="mail__wrapper">
+					<ul class="mail__list">
+						<li class="mail__item">Личный менеджер</li>
+						<li class="mail__item">Доставка и оформление</li>
+						<li class="mail__item">Индивидуальный дизайн</li>
+					</ul>
+					<div class="mail__form-box">
+						<form action="#" class="mail__form">
+							<input type="text" name="email" class="mail__form-input" placeholder="Ваш e-mail">
+							<button class="mail__form-btn" type="submit">отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__links links">
+					<h3 class="footer__title links__title">Полезные ссылки</h3>
+					<ul class="links__list">
+						<li class="links__item footer__text"><a href="#">Доставка</a></li>
+						<li class="links__item footer__text"><a href="#">Оплата</a> </li>
+						<li class="links__item footer__text"><a href="#">Акции</a></li>
+						<li class="links__item footer__text"><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="footer__payment payment">
+					<h3 class="footer__title payment__title">оплата</h3>
+					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo,
+						nec, pellentesque.
+					</p>
+					<div class="payment__systems">
+						<a href="#" class="payment__link">
+							<img src="img/visa.png" alt="Visa">
+						</a>
+						<a href="" class="payment__link">
+							<img src="img/mc.png" alt="MasterCard">
+						</a>
+					</div>
+				</div>
+				<div class="footer__contacts contacts">
+					<h3 class="footer__title contacts__title">контакты</h3>
+					<ul class="contacts__list">
+						<li class="contacts__item footer__text icon-phone">
+							<a href="tel:8 (812) 234-56-55" class="contacts__link">8 (812) 234-56-55</a>
+						</li>
+						<li class="contacts__item footer__text icon-phone">
+							<a href="tel:8 (812) 234-56-55" class="contacts__link">8 (812) 234-56-55</a>
+						</li>
+						<li class="contacts__item footer__text icon-mail">
+							<a href="mailto:ojjo@ojjo.ru" class="contacts__link">ojjo@ojjo.ru</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__social socaial">
+					<h3 class="footer__title social__title">социальные сети</h3>
+					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo,
+						nec, pellentesque.
+					</p>
+					<div class="social__wrapper">
+						<ul class="social__list">
+							<li class="social__item">
+								<a href="" class="social__link icon-yt"></a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link icon-vk"></a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link icon-fb"></a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link icon-tg"></a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link icon-e"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyrights">
+				<p class="footer__text">(c) 2020 OJJO jewelry</p>
+				<p class="footer__text">
+					<a href="#">Договор публичной офферты</a>
+				</p>
+				<p class="footer__text">
+					<a href="#">Контрагентам</a>
+				</p>
+				<p class="footer__text">
+					<a href="#">Сделано Figma.info</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
