@@ -1,0 +1,180 @@
+@media screen and (max-width: 1439.98px) {
+	.container {
+		max-width: 704px;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	//HEADER
+
+	.header {
+		height: 64px;
+	}
+	.container {
+	}
+	.header__wrapper {
+	}
+	.header__logo {
+		img {
+			width: 128px;
+		}
+	}
+	.header__nav {
+	}
+	.header__list {
+		width: 425px;
+	}
+	.header__list--item {
+	}
+	.header__list--link {
+	}
+
+	//ADVENTURES ARTICLE
+
+	.adventures {
+		margin-top: 64px;
+	}
+	.adventures__title {
+		position: static;
+		width: 100%;
+		font-size: 72px;
+		line-height: 72px;
+		letter-spacing: 0.02em;
+		text-align: center;
+	}
+	.advetures__content {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+	.adventures__textblock {
+		justify-content: start;
+		order: 3;
+		width: 552px;
+		margin: 6px auto 0;
+	}
+	.adventures__text {
+	}
+	.adventures__form {
+		margin-bottom: 14px;
+	}
+	.adventures__form--field {
+	}
+	.adventures__btn {
+	}
+	.adventures__pic {
+		position: static;
+		width: 128px;
+		align-self: end;
+		transform: translateX(55%);
+	}
+	.adventures__imgblock {
+		align-self: center;
+		right: 0;
+		img:nth-child(2){
+			position: absolute;
+			top: 0;
+			left: -120px;
+		}
+		img:last-child{
+			position: absolute;
+			top: 25%;
+			right: -170px;
+		}
+	}
+
+	//GAME ARTICLE
+
+	.game {
+		margin-top: 135px;
+	}
+	.game__wrapp {
+		flex-direction: column;
+		align-items: center;
+	}
+	.game__img {
+		width: 656px;
+		margin: 0 auto;
+		img:last-child{
+			position: absolute;
+			top: 0;
+			left: 60%;
+		}
+	}
+	.game__text {
+		width: 552px;
+		margin-top: 13px;
+	}
+	.game__p {
+	}
+	.game__text--img {
+		display: flex;
+		justify-content: center;
+		margin-top: 48px;
+	}
+
+	//STORY ARTICLE
+
+	.story {
+		margin-top: 136px;
+	}
+	.story__part1 {
+		flex-direction: column;
+	}
+	.story__textblock--part1 {
+		width: 552px;
+	}
+	.story__title {
+		width: 440px;
+	}
+	.story__text {
+		width: 552px;
+	}
+	.story__part1--dots {
+		top: 40px;
+		right: 0;
+	}
+	.story__img--part1 {
+		margin-top: 40px;
+		width: 560px;
+		img:last-child{
+			position: absolute;
+			bottom: -50px;
+			right: -60px;
+		}
+	}
+	.story__part2 {
+		flex-direction: column-reverse;
+		margin-top: 84px;
+	}
+	.story__img--part2 {
+		margin-top: 40px;
+		img:last-child{
+			position: absolute;
+			top: -20px;
+			left: -70px;
+		}
+	}
+	.story__textblock--part2 {
+	}
+	.story__part3 {
+		flex-direction: column;
+	}
+	.story__textblock--part3 {
+		width: 552px;
+	}
+	.story__img--part3 {
+		margin-top: 48px;
+		width: 456px;
+		align-self: end;
+		img:nth-child(3){
+			position: absolute;
+			top: 30px;
+			left: -90px;
+		}
+		img:nth-child(4){
+			position: absolute;
+			bottom: -30px;
+			left: -205px;
+		}
+	}
+}
