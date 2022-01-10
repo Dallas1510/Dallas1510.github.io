@@ -10,23 +10,13 @@
 	.header {
 		height: 64px;
 	}
-	.container {
-	}
-	.header__wrapper {
-	}
 	.header__logo {
 		img {
 			width: 128px;
 		}
 	}
-	.header__nav {
-	}
 	.header__list {
 		width: 425px;
-	}
-	.header__list--item {
-	}
-	.header__list--link {
 	}
 
 	//ADVENTURES ARTICLE
@@ -52,14 +42,8 @@
 		width: 552px;
 		margin: 6px auto 0;
 	}
-	.adventures__text {
-	}
 	.adventures__form {
 		margin-bottom: 14px;
-	}
-	.adventures__form--field {
-	}
-	.adventures__btn {
 	}
 	.adventures__pic {
 		position: static;
@@ -103,8 +87,6 @@
 	.game__text {
 		width: 552px;
 		margin-top: 13px;
-	}
-	.game__p {
 	}
 	.game__text--img {
 		display: flex;
@@ -154,8 +136,6 @@
 			left: -70px;
 		}
 	}
-	.story__textblock--part2 {
-	}
 	.story__part3 {
 		flex-direction: column;
 	}
@@ -177,4 +157,15 @@
 			left: -205px;
 		}
 	}
+
+	//INFO ARTICLE
+
+	.info {
+		margin-top: 106px;
+	}
+	.info__social {
+		width: 224px;
+		margin: 32px auto 64px;
+	}
+
 }

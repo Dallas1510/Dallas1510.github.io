@@ -17,20 +17,27 @@
 		top: 0;
 		left: 0;
 		margin: 0 auto;
-		z-index: 10;
+		z-index: 6;
 		height: 60px;
-		width: 320px;
-		transition: 0.4s;
+		width: 100vw;
+		transition: 1s;
+		background-color: $white;
+
 		&::before {
 			content: "";
 			position: absolute;
 			top: 0;
+			z-index: 4;
 			width: 100%;
 			height: 100%;
 			background-color: $white;
+			transition: 1s;
 		}
 		&.hide {
 			transform: translateY(-100%);
+		}
+		&.active::before {
+			height: 100vh;
 		}
 	}
 	.header__wrapper {
@@ -46,11 +53,10 @@
 		position: absolute;
 		left: 0;
 		z-index: 4;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		transform: translateY(-100%);
 		transition: 1s;
-		background-color: rgba(255, 255, 255, 0.8);
 		&.active {
 			transform: translateY(0);
 		}
@@ -66,7 +72,7 @@
 		position: absolute;
 		top: 16px;
 		right: 0;
-		z-index: 20;
+		z-index: 5;
 		width: 24px;
 		height: 24px;
 		cursor: pointer;
@@ -115,10 +121,6 @@
 				}
 			}
 		}
-	}
-	.header__list--item {
-	}
-	.header__list--link {
 	}
 
 	//ADVENTURES ARTICLE
@@ -190,8 +192,6 @@
 	.game {
 		margin-top: 125px;
 	}
-	.game__wrapp {
-	}
 	.game__img {
 		width: 100%;
 		img:first-child {
@@ -209,8 +209,6 @@
 		line-height: 24px;
 		letter-spacing: 0.02em;
 	}
-	.game__p {
-	}
 	.game__text--img {
 		margin-top: 32px;
 		width: 100%;
@@ -224,8 +222,6 @@
 
 	.story {
 		margin-top: 112px;
-	}
-	.story__part1 {
 	}
 	.story__textblock--part1 {
 		width: 100%;
@@ -242,6 +238,7 @@
 		letter-spacing: 0.02em;
 	}
 	.story__part1--dots {
+		transition: .4s;
 		top: 400px;
 	}
 	.story__img--part1 {
@@ -287,26 +284,68 @@
 	.story__img--part3 {
 		width: 320px;
 		transform: translateX(15px);
-		img:first-child{
+		img:first-child {
 			width: 100%;
 		}
-		img:nth-child(2){
+		img:nth-child(2) {
 			width: 48px;
 			position: absolute;
 			top: -48px;
 			left: 35%;
 		}
-		img:nth-child(3){
+		img:nth-child(3) {
 			width: 80px;
 			position: absolute;
 			top: 0;
 			left: 20px;
 		}
-		img:nth-child(4){
+		img:nth-child(4) {
 			width: 132px;
 			position: absolute;
 			bottom: -160px;
 			left: 20px;
 		}
+	}
+
+	//INFO ARTICLE
+
+	.info {
+		margin-top: 237px;
+	}
+	.info__more {
+		margin: 0 auto;
+		width: 288px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.info__link {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.info__social {
+		width: 224px;
+		margin: 32px auto 64px;
+	} 
+
+	//FOOTER
+
+	.footer{
+		height: 180px;
+	}
+	.footer__wrap{
+		width: 166px;
+		padding: 24px 0 0;
+	}
+	.footer__link{
+		margin-bottom: 16px;
+	}
+	.footer__copyright{
+		text-align: center;
+	}
+	.to-top{
+		top: 124px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
