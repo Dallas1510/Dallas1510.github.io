@@ -1,0 +1,155 @@
+@media screen and (max-width: 1850px) {
+	.main-element {
+		height: 65.5vw;
+	}
+	.container {
+		padding: 0px 40px;
+	}
+	.header {
+		position: relative;
+		z-index: 5;
+		transition: 0.3s;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 90px;
+			z-index: 4;
+			display: block;
+			width: 100%;
+			height: 40px;
+			background-color: $dark;
+			transition: 0.3s;
+		}
+		&.active::after {
+			top: 130px;
+			z-index: 2;
+		}
+	}
+	.header__burger-btn {
+		display: block;
+		transition: 0.3s;
+		& > svg {
+			width: 100%;
+			height: 100%;
+		}
+		&.active {
+			transform: rotate(180deg);
+		}
+	}
+	.nav {
+		position: absolute;
+		top: 90px;
+		z-index: 3;
+		transition: top 0.3s;
+		&.active {
+			top: 120px;
+		}
+	}
+	.nav__item {
+		padding: 0 5px;
+	}
+	.menu__list {
+		padding: 15px 30px 15px 30px;
+	}
+	
+	.agents {
+		margin-top: 3%;
+	}
+	.agents__slider {
+		margin-left: 50px;
+		height: 450px;
+		width: 1370px;
+	}
+	.agents__text {
+		@include text(66px, 700, 0.3em);
+	}
+	.agents__slider-wrapp {
+		left: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 1180px;
+	}
+	.agent__item {
+		position: relative;
+		flex: 0 0 250px;
+		height: 500px;
+	}
+	.agent__description {
+		left: -25px;
+	}
+	.agent__country {
+		@include text(20px, 500, 0.25em);
+		line-height: 25px;
+	}
+	.agent__name {
+		@include text(40px, 700, 0.4em);
+		line-height: 50px;
+	}
+	.agent__abillity-block {
+		left: 20px;
+		bottom: -25px;
+		width: 250px;
+		height: 50px;
+		padding: 5px 5px;
+	}
+
+	.abillities__slider {
+		left: -20px;
+		bottom: 30px;
+		height: 120px;
+		width: 1300px;
+	}
+	.abillities__slider-wrapp {
+		height: 100%;
+	}
+	.abillities__slide {
+		height: 100%;
+	}
+	.agents__abillities {
+		width: 1150px;
+	}
+	.agents__abyllity {
+		width: 380px;
+		height: 120px;
+	}
+	.agents__abyllity-text {
+		width: 220px;
+	}
+	.agents__abyllity-title {
+		@include text(20px, 700, 0.2em);
+	}
+	.agents__abyllity-name {
+		margin: 10px 0;
+		@include text(18px, 700, 0.1em);
+	}
+	.agents__abyllity-description {
+		width: 250px;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		color: $dark;
+	}
+	.agents__abyllity-square {
+		position: absolute;
+		right: 20px;
+		width: 80px;
+		height: 72px;
+	}
+	.agents__abyllity-skill {
+		bottom: 25px;
+		left: 300px;
+		width: 70px;
+		height: 70px;
+		& svg {
+			width: 100%;
+			height: 100%;
+			& > path {
+				fill: $dark;
+			}
+		}
+	}
+	.button-next {
+		width: 120px;
+		height: 120px;
+	}
+}
