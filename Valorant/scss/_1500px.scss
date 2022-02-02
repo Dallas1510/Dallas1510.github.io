@@ -1,0 +1,119 @@
+@media screen and (max-width: 1500px) {
+	.header {
+		height: 100px;
+		&::after {
+			top: 60px;
+			z-index: -1;
+		}
+		&.active::after {
+			top: 99px;
+			z-index: 2;
+		}
+	}
+	.nav {
+		top: 60px;
+		z-index: -1;
+		&.active {
+			top: 99px;
+			z-index: 10;
+		}
+	}
+	.agents {
+		margin-top: 4%;
+	}
+	.agents__slider {
+		margin-left: 30px;
+		height: 400px;
+		width: 1000px;
+	}
+	.agents__text {
+		@include text(56px, 700, 0.3em);
+	}
+	.agents__slider-wrapp {
+		left: 0;
+		width: 900px;
+	}
+	.agent__item {
+		position: relative;
+		flex: 0 0 200px;
+		height: 380px;
+	}
+	.agent__description {
+		left: -20px;
+		top: 10px;
+	}
+	.agent__country {
+		@include text(16px, 500, 0.25em);
+		line-height: 20px;
+	}
+	.agent__name {
+		@include text(30px, 700, 0.4em);
+		line-height: 40px;
+	}
+	.agent__abillity-block {
+		left: 5px;
+		bottom: -25px;
+		width: 200px;
+		height: 50px;
+	}
+	.agent__skill {
+	}
+	.abillities__slider {
+		left: -20px;
+		bottom: 30px;
+		height: 120px;
+		width: 1000px;
+	}
+	.abillities__slider-wrapp {
+		height: 100%;
+	}
+	.abillities__slide {
+		height: 100%;
+	}
+	.agents__abillities {
+		width: 890px;
+	}
+	.agents__abyllity {
+		width: 285px;
+		height: 120px;
+	}
+	.agents__abyllity-text {
+		margin: 10px 0 0 10px;
+	}
+	.agents__abyllity-title {
+		@include text(20px, 700, 0.2em);
+	}
+	.agents__abyllity-name {
+		margin: 5px 0;
+		@include text(18px, 700, 0.1em);
+	}
+	.agents__abyllity-description {
+		width: 200px;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: normal;
+		color: $dark;
+	}
+	.agents__abyllity-square {
+		top: 0;
+		right: 0;
+		width: 70px;
+		height: 70px;
+	}
+	.agents__abyllity-skill {
+		bottom: 55px;
+		left: 225px;
+		width: 50px;
+		height: 50px;
+		& svg {
+			width: 100%;
+			height: 100%;
+			& > path {
+				fill: $dark;
+			}
+		}
+	}
+	.button-next {
+		width: 100px;
+	}
+}
